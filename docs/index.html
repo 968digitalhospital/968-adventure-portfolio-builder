@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>968 Adventure Portfolio Builder</title>
+    <style>
+      :root { color-scheme: dark; --ink: #f5f2ea; --navy: #101c24; --sand: #e8e2d6; --orange: #ef6b4d; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: var(--navy); color: var(--ink); font: 16px/1.6 system-ui, sans-serif; }
+      main { max-width: 860px; margin: 0 auto; padding: 12vh 24px; }
+      .eyebrow { color: #f6a18b; font: 700 12px/1.2 ui-monospace, monospace; letter-spacing: .2em; text-transform: uppercase; }
+      h1 { max-width: 720px; margin: 20px 0; font: 700 clamp(3rem, 8vw, 7rem)/.9 Georgia, serif; letter-spacing: -.06em; }
+      h1 span { color: var(--orange); }
+      p { max-width: 660px; color: #b9c0c5; }
+      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 48px; }
+      article { border: 1px solid #ffffff1c; border-radius: 18px; background: #ffffff08; padding: 22px; }
+      article strong { display: block; color: var(--sand); }
+      a { color: #f6a18b; }
+      .download { display: inline-block; margin-top: 24px; border-radius: 999px; background: var(--orange); color: #101c24; padding: 12px 18px; font-weight: 700; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">Reusable skill · 968 Adventure</div>
+      <h1>Build a portfolio with <span>signal.</span></h1>
+      <p>A reusable Manus skill for cinematic personal adventure portfolios combining amateur radio, drone photography, fine-art prints, 4×4 overlanding, community storytelling, ADIF logbook publishing, and source-linked DX planning.</p>
+      <a class="download" href="../968-adventure-portfolio-builder-template.zip">Download the skill package</a>
+      <section class="grid" aria-label="Included capabilities">
+        <article><strong>Portfolio builder</strong>Editorial layouts, media handling, watermarked previews, and responsive interactions.</article>
+        <article><strong>ADIF updater</strong>Deterministic parsing into a compact Recent QSOs JSON file without inventing records.</article>
+        <article><strong>DX planner</strong>Source-linked contest and DXpedition calendar patterns with change warnings.</article>
+        <article><strong>Prompt configuration</strong>Reusable system prompts for portfolio design and amateur-radio logbook planning.</article>
+      </section>
+    </main>
+  </body>
+</html>
