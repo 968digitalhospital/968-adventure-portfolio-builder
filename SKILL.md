@@ -1,6 +1,6 @@
 ---
 name: 968-adventure-portfolio-builder
-description: Build or evolve a premium personal adventure portfolio website that combines amateur radio, drone photography, fine-art print sales, 4x4 overlanding, and community/service storytelling. Use when creating or updating a similar multi-hobby portfolio, especially when user-provided photos, watermarked galleries, expedition journals, or iterative WebDev edits are involved.
+description: Build or evolve a premium personal adventure portfolio website and reusable skill package combining amateur radio, ADIF logbooks, DX planning, drone photography, fine-art print sales, 4x4 overlanding, and community/service storytelling. Use when creating or updating a similar multi-hobby portfolio, exporting the workflow as a skill, syncing it to GitHub, or deploying its documentation to GitHub Pages.
 ---
 
 # 968 Adventure Portfolio Builder
@@ -29,6 +29,9 @@ Use this skill to turn a personal, multi-disciplinary identity into a cohesive, 
 8. **Use real interactions.** Include anchor navigation, mobile menu, gallery filtering, carousel controls, request-print feedback, and keyboard-reachable buttons. Use `sonner` for staged actions. Keep payment or licensing flows as a clear request/placeholder unless a backend/payment integration is actually enabled.
 9. **Add user-supplied details in structured form.** For equipment, show model, role/specification, and upgrade date only when known. For route journals, show date/status, route or region, objective, conditions, recovery lesson, and photo. For uncertain facts, use “Add details” or an editable data structure rather than guessing.
 10. **Validate before delivery.** Run `pnpm check` and `pnpm build`. Capture a desktop and mobile preview; use a full-page capture for long editorial pages. Fix only concrete runtime, content, or layout defects. Save one checkpoint after the feature set is complete and deliver its `manus-webdev://...` link.
+11. **Package the workflow as a skill.** Keep the required `SKILL.md` concise and place deterministic utilities in `scripts/`, prompt/configuration files in `templates/`, and larger guidance in `references/`. Run `quick_validate.py` before packaging. Do not add README or changelog files to the skill package.
+12. **Synchronize the export.** Create a dedicated Git repository for the skill package when requested. Commit `SKILL.md`, bundled scripts, templates, and the standalone ZIP artifact. Push the default branch only after confirming the repository URL and clean working tree.
+13. **Deploy package documentation.** When GitHub Pages is requested, include a minimal `docs/index.html` landing page and `.github/workflows/pages.yml` using `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages`. Select GitHub Actions as the Pages source, verify the workflow run, and verify the published URL. If the token lacks repository-admin or Pages permissions, stop and request connector enablement or manual Settings → Pages configuration rather than weakening the workflow.
 
 ## Reusable Content Patterns
 
