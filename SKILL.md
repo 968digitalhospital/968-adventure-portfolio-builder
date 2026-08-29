@@ -74,6 +74,10 @@ For static radio pages, bundle a deterministic parser at `scripts/update_recent_
 
 Add a compact, source-linked calendar section to the amateur-radio page with `type`, `title`, `date`, `focus`, and `source` fields. Prefer official contest calendars and recognized DX calendars, show a “verify before operating” note for time-sensitive activity, and distinguish public event information from the operator’s own confirmed plans. Use responsive cards or a small table rather than an unbounded feed.
 
+### System-prompt configuration
+
+Use `templates/system-prompt-config.yaml` as the reusable prompt configuration. It contains one portfolio-builder system prompt and one amateur-radio logbook/DX-planning system prompt, plus conservative runtime defaults for A41DA, Oman, Asia/Muscat, source-linked calendars, and logbook privacy. Adapt the callsign and locale only when the operator supplies different values.
+
 ## Quality Guardrails
 
 - Keep the page visually authored: avoid generic dashboard layouts and excessive pills.
